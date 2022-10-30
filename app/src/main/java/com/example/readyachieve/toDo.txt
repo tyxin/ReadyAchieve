@@ -1,0 +1,43 @@
+to be done:
+- home fragment (done, except description of goals and milestones, and collapsing fully of toolbar)
+- dashboard fragment (more or less, just minor design stuff, can change colour for diff types)
+- discover fragment (to finish templates)
+- leaderboard fragment (ui done, only thing in firebase)
+- milestones fragment (done, minor design left)
+- overview fragment (mostly done)
+- progress fragment (ui done)
+- about app fragment (done)
+- feedback fragment (mostly done)
+- settings fragment (ui done)
+- model goal (implementation of methods left)
+- model milestones (implementation of methods left)
+- new goal activity (done, just minor design edits)
+- new milestone activity (done, just minor design edits)
+- discover templates store on firebase
+- ***saving of data, error checking
+- onboarding tutorial for how to use app
+- checkbox for goals and milestones
+
+in progress:
+- new goal activity (done)
+- new milestone activity (done)
+- dashboard fragment (done)
+- error checking
+- bar chart discover fragment
+- onboarding (yey done)
+- leaderboard fragment badges
+- send out apk for people to test yep
+- notifications
+
+--- can add recycler view under milestone activity to display only if not creating (done)
+
+to fix:
+- clicking on edit text makes background jump (fixed yay)
+- top and bottom margin of new goal and new milestone activity (fixed yay)
+- set selection does not work (fixed)
+- changing of title crashes (fixed)
+- update goal group once milestone exits out (solved)
+- something wrong with reading (should not be a problem now)
+- if person repeatedly checks and unchecks, counted
+- milestones in goals only loads the first one, rest does not (solved ayyy)
+- Dashboard tab: People can actually insert multi-lined milestone names using this exploit:

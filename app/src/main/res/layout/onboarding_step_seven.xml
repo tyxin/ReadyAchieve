@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".ui.onboarding.OnBoardingStepSeven">
+
+
+    <ImageView
+        android:id="@+id/secure_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/leaderboard_image"
+        app:layout_constraintEnd_toStartOf="@id/secure_text"
+        app:layout_constraintTop_toBottomOf="@id/skipButton"
+        app:srcCompat="@drawable/ic_lock_black_24dp" />
+
+    <TextView
+        android:id="@+id/secure_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:text="Secure. All data is kept in your internal storage.*"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/secure_text_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/secure_image"
+        app:layout_constraintTop_toTopOf="@id/secure_image" />
+
+    <TextView
+        android:id="@+id/secure_text_small"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:text="Except leaderboard points and badges"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@id/leaderboard_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/secure_image"
+        app:layout_constraintTop_toBottomOf="@id/secure_text" />
+
+    <ImageView
+        android:id="@+id/leaderboard_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toStartOf="@id/leaderboard_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/secure_image"
+        app:layout_constraintBottom_toTopOf="@id/start_image"
+        app:srcCompat="@drawable/ic_emoji_events_black_24dp" />
+
+    <TextView
+        android:id="@+id/leaderboard_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="35dp"
+        android:text="Monitor. Evaluate your progress with peers using the app as well!"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/start_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toEndOf="@id/leaderboard_image"
+        app:layout_constraintTop_toBottomOf="@id/secure_image"
+        app:layout_constraintVertical_bias="0.312" />
+
+    <ImageView
+        android:id="@+id/start_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="175dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/start_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/leaderboard_image"
+        app:srcCompat="@drawable/ic_stairs_black_24dp" />
+
+    <TextView
+        android:id="@+id/start_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="175dp"
+        android:text="Improve. Be better than yesterday, strive to be a better you tomorrow."
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/start_image"
+        app:layout_constraintTop_toBottomOf="@id/leaderboard_image" />
+
+
+    <Button
+        android:id="@+id/skipButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Skip"
+        app:layout_constraintBottom_toTopOf="@id/secure_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

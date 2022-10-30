@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.leaderboard.LeaderboardFragment">
+
+    <TextView
+        android:id="@+id/leaderboardTopShapeTV"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="25dp"
+        android:background="@drawable/leaderboard_top_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pointsLeaderboardTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="27dp"
+        android:text="__ pts"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="@+id/leaderboardTopShapeTV"
+        app:layout_constraintTop_toTopOf="@+id/leaderboardTopShapeTV" />
+
+    <TextView
+        android:id="@+id/badgesLeaderboardTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="19dp"
+        android:text="__ badges obtained"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/leaderboardTopShapeTV"
+        app:layout_constraintStart_toStartOf="@+id/leaderboardTopShapeTV" />
+
+    <Button
+        android:id="@+id/viewLeaderboardButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:drawableRight="@drawable/ic_login_24px"
+        android:text="View Leaderboard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/infoLeaderboardButton"
+        app:layout_constraintTop_toBottomOf="@id/leaderboardTopShapeTV">
+
+    </Button>
+
+    <Button
+        android:id="@+id/infoLeaderboardButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="More info"
+        app:layout_constraintEnd_toStartOf="@id/viewLeaderboardButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/leaderboardTopShapeTV" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewLeaderboardButton">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/badges_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:columnWidth="95dp"
+            android:gravity="center"
+            android:numColumns="4"
+            tools:listitem="@layout/leaderboard_badges_layout"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" />
+
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

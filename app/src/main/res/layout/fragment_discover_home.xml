@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.discover.DiscoverHomeFragment">
+
+    <TextView
+        android:id="@+id/topDiscoverTV"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/discover_top_shape_two"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/discoverTitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="55dp"
+        android:text="Discover"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/discoverTitleBottomTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="The possibilities."
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/discoverTitleTV"
+        app:layout_constraintTop_toBottomOf="@+id/discoverTitleTV" />
+
+    <ImageView
+        android:id="@+id/imageViewDiscoverTitle"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/ic_undraw_map_1r69"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="26dp"/>
+
+    <Button
+        android:id="@+id/discoverTemplateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/discover_button_shape"
+        android:drawableRight="@drawable/ic_arrow_right_alt_24px"
+        android:text="Discover in-built templates"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/discoverTitleBottomTV"/>
+
+    <Button
+        android:id="@+id/discoverGoalsMilestonesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/discover_button_shape"
+        android:drawableRight="@drawable/ic_arrow_right_alt_24px"
+        android:text="Discover all about goals and milestones"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/discoverTemplateButton"/>
+
+    <Button
+        android:id="@+id/discoverTipsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/discover_button_shape"
+        android:drawableRight="@drawable/ic_arrow_right_alt_24px"
+        android:text="Discover online tips and advice"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/discoverGoalsMilestonesButton"/>
+
+    <ImageView
+        android:id="@+id/bottomDiscoverImageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="25dp"
+        android:paddingBottom="15dp"
+        app:layout_constraintTop_toBottomOf="@id/discoverTipsButton"
+        android:src="@drawable/ic_undraw_treasure_of9i"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

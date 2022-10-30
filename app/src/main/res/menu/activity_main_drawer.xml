@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Main">
+        <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_home"
+                android:icon="@drawable/ic_home_24px"
+                android:title="@string/menu_home" />
+
+            <item
+                android:id="@+id/nav_dashboard"
+                android:icon="@drawable/ic_dashboard_24px"
+                android:title="Dashboard" />
+
+            <item
+                android:id="@+id/nav_goals"
+                android:icon="@drawable/ic_goals_24px"
+                android:title="Goals" />
+
+            <item
+                android:id="@+id/nav_overview"
+                android:icon="@drawable/ic_overview_24px"
+                android:title="Overview" />
+
+            <item
+                android:id="@+id/nav_progress"
+                android:icon="@drawable/ic_progress_24px"
+                android:title="Progress" />
+
+            <item
+                android:id="@+id/nav_discover"
+                android:icon="@drawable/ic_discover_24px"
+                android:title="Discover" />
+
+            <item
+                android:id="@+id/nav_leaderboard"
+                android:icon="@drawable/ic_leaderboard_24px"
+                android:title="Leaderboard" />
+
+        </group>
+    </item>
+    <item android:title="Information">
+        <group
+            android:id="@+id/information_navigation">
+            <item
+                android:id="@+id/nav_about_app"
+                android:icon="@drawable/ic_info_24px"
+                android:title="About app" />
+
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/ic_feedback_24px"
+                android:title="Feedback" />
+
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings_24px"
+                android:title="Settings" />
+
+        </group>
+    </item>
+
+
+</menu>

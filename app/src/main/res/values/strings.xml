@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">ReadyAchieve</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string-array name="repeatType">
+        <item>Please Select</item>
+        <item>No Repeat</item>
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Yearly</item>
+<!--        <item>Custom</item>-->
+    </string-array>
+
+    <string name="email_note">You may send an email to the developers of this app to ask questions or provide feedback / suggestions.
+    Thank you for your input!</string>
+    <string name="email_subject">Email Subject</string>
+    <string name="email_content">Email Content</string>
+    <string name="send_email">Send Email!</string>
+    <string name="about_developer_description">This app was created by Teoh Yu Xin, a Year 4 student at NUS High School.
+        If you have any feedback, do feel free to drop an email via the feedback tab!</string>
+    <string name="about_app_description_part_one">ReadyAchieve is a goal setting app customized by you, for you.
+    Easy and clean overview of all the goals to achieve by chronological order allows you to track
+        and sort your goals efficiently. </string>
+    <string name="about_app_description_part_two">The use of milestones allows you to
+    group your small goals together to achieve one big end aim by taking small manageable steps.</string>
+    <string name="about_app_description_part_three">Discovering default templates allow you to start off somewhere and
+    develop your milestones and goals.</string>
+    <string name="about_app_description_part_four">Seeing yourself compete against other users via the
+    leaderboard and earning of badges keeps you motivated and driven to complete all your goals!</string>
+    <string name="credits_about_app">Undraw.co, material.io. coolors.co, freepik, icons8 illustrations and icons used in the app, as well as
+    tips and advice provided by https://www.thebalancesmb.com/goal-setting-tips-2948134</string>
+    <string name="goal_disclaimer">Milestones can be added under goals! Add a milestone under goal group and view the milestones via the goal tab!</string>
+    <string name="what_badge_signify_content">If you have obtained a badge, good job! \n\nThis means that you have obtained a certain number of points, and worked doubly hard to obtain it!
+    <br></br><br></br>You obtain the "Getting Started" badge when you earned 20 points, "Warming up" when you have earned 100 points, "Hang of it" when you have earned 250 points
+    and "Achieving it" when you have earned 500 points! </string>
+    <string name="how_obtain_points_content">Points are obtained when you complete a milestone or goal, and different types will earn you different points!
+    \n\nCompleting standalone milestones earn you 25 points, completing milestones in goals earn you 20 points and completing goals earn you 100 points!</string>
+    <string name="dashboard_description">Dashboard shows standalone milestones and goals details. Click on the checkbox to complete your milestones and goals. To view milestones in goals, click the goals tab!</string>
+    <string name="goals_description">The right circle shows the number of milestones completed out of all of your milestones in your goal, click your goals to view more!</string>
+
+</resources>

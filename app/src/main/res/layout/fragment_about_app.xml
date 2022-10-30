@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.aboutapp.AboutAppFragment">
+
+    <ScrollView
+        android:id="@+id/about_app_scrollview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+
+            <TextView
+                android:id="@+id/aboutDeveloperTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About Developer"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_margin="20dp"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/developerDescriptionTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="@string/about_developer_description"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/aboutDeveloperTV" />
+
+            <TextView
+                android:id="@+id/aboutAppTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About App"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/developerDescriptionTV"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/appFirstDescriptionTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="16dp"
+                android:padding="5dp"
+                android:text="@string/about_app_description_part_one"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toStartOf="@id/firstImageViewAboutApp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/aboutAppTV" />
+
+            <ImageView
+                android:id="@+id/firstImageViewAboutApp"
+                android:layout_width="175dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_undraw_all_the_data_re_hh4w"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/appFirstDescriptionTV"
+                app:layout_constraintTop_toBottomOf="@id/aboutAppTV" />
+
+            <TextView
+                android:id="@+id/appSecondDescriptionTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="10dp"
+                android:padding="5dp"
+                android:text="@string/about_app_description_part_two"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/secondImageViewAboutApp"
+                app:layout_constraintTop_toBottomOf="@id/appFirstDescriptionTV" />
+
+            <ImageView
+                android:id="@+id/secondImageViewAboutApp"
+                android:layout_width="175dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_undraw_progress_overview_re_tvcl"
+                app:layout_constraintEnd_toStartOf="@id/appSecondDescriptionTV"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/appFirstDescriptionTV" />
+
+
+            <TextView
+                android:id="@+id/appThirdDescriptionTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="16dp"
+                android:padding="5dp"
+                android:text="@string/about_app_description_part_three"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toStartOf="@id/thirdImageViewAboutApp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/appSecondDescriptionTV" />
+
+            <ImageView
+                android:id="@+id/thirdImageViewAboutApp"
+                android:layout_width="175dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_undraw_project_completed_re_pqqq"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/appThirdDescriptionTV"
+                app:layout_constraintTop_toBottomOf="@id/appSecondDescriptionTV" />
+
+            <TextView
+                android:id="@+id/appFourthDescriptionTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="10dp"
+                android:padding="5dp"
+                android:text="@string/about_app_description_part_four"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/fourthImageViewAboutApp"
+                app:layout_constraintTop_toBottomOf="@id/appThirdDescriptionTV" />
+
+            <ImageView
+                android:id="@+id/fourthImageViewAboutApp"
+                android:layout_width="175dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_undraw_winners_ao2o"
+                app:layout_constraintEnd_toStartOf="@id/appFourthDescriptionTV"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/appThirdDescriptionTV" />
+
+
+            <TextView
+                android:id="@+id/creditsTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Special thanks to:"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/appFourthDescriptionTV"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:textSize="24sp"/>
+
+
+            <TextView
+                android:id="@+id/creditsDescriptionTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="20dp"
+                android:text="@string/credits_about_app"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/creditsTV" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/discover_nav"
+    app:startDestination="@id/discoverFragment">
+
+    <fragment
+        android:id="@+id/discoverFragment"
+        android:name="com.example.readyachieve.ui.main.discover.DiscoverHomeFragment"
+        android:label="fragment_discover"
+        tools:layout="@layout/fragment_discover_home" >
+        <action
+            android:id="@+id/home_to_template"
+            app:destination="@id/discoverTemplateFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/home_to_goal_milestone"
+            app:destination="@id/discoverGoalMilestoneFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/home_to_tips_advice"
+            app:destination="@id/discoverTipsAdviceFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/discoverTemplateFragment"
+        android:name="com.example.readyachieve.ui.main.discover.DiscoverTemplateFragment"
+        android:label="DiscoverTemplateFragment"
+        tools:layout="@layout/fragment_discover_template">
+        <action
+            android:id="@+id/template_to_home"
+            app:destination="@id/discoverFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/discoverGoalMilestoneFragment"
+        android:name="com.example.readyachieve.ui.main.discover.DiscoverGoalMilestoneFragment"
+        android:label="DiscoverGoalMilestoneFragment"
+        tools:layout="@layout/fragment_discover_goals_milestones">
+        <action
+            android:id="@+id/goal_milestone_to_home"
+            app:destination="@id/discoverFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/discoverTipsAdviceFragment"
+        android:name="com.example.readyachieve.ui.main.discover.DiscoverTipsAdviceFragment"
+        android:label="DiscoverTipsAdviceFragment"
+        tools:layout="@layout/fragment_discover_tips_advice">
+        <action
+            android:id="@+id/tips_advice_to_home"
+            app:destination="@id/discoverFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
+    </fragment>
+</navigation>

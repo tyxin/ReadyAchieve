@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "803669722543",
+    "project_id": "readyachieve-dee68",
+    "storage_bucket": "readyachieve-dee68.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:803669722543:android:25d3846ec7a07a5c975b5a",
+        "android_client_info": {
+          "package_name": "com.example.readyachieve"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "803669722543-voq0lqta130ehek2bj1h8uvbj70dof6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEwDo6VUNN9c88vBH-s3UIMQ5SeozNsTQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "803669722543-voq0lqta130ehek2bj1h8uvbj70dof6l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.readyachieve.ui.main.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_dashboard"
+        android:name="com.example.readyachieve.ui.main.dashboard.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/nav_goals"
+        android:name="com.example.readyachieve.ui.main.goals.GoalsFragment"
+        android:label="Goals"
+        tools:layout="@layout/fragment_goals" />
+
+    <fragment
+        android:id="@+id/nav_overview"
+        android:name="com.example.readyachieve.ui.main.overview.OverviewFragment"
+        android:label="Overview"
+        tools:layout="@layout/fragment_overview" />
+
+    <fragment
+        android:id="@+id/nav_progress"
+        android:name="com.example.readyachieve.ui.main.progress.ProgressFragment"
+        android:label="Progress"
+        tools:layout="@layout/fragment_progress" />
+
+    <fragment
+        android:id="@+id/nav_discover"
+        android:name="com.example.readyachieve.ui.main.discover.DiscoverFragment"
+        android:label="Discover"
+        tools:layout="@layout/fragment_discover" />
+
+    <fragment
+        android:id="@+id/nav_leaderboard"
+        android:name="com.example.readyachieve.ui.main.leaderboard.LeaderboardFragment"
+        android:label="Leaderboard"
+        tools:layout="@layout/fragment_leaderboard" >
+        <action
+            android:id="@+id/leaderboard_to_ranking"
+            app:destination="@id/nav_leaderboard_ranking"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_about_app"
+        android:name="com.example.readyachieve.ui.information.aboutapp.AboutAppFragment"
+        android:label="About App"
+        tools:layout="@layout/fragment_about_app" />
+
+    <fragment
+        android:id="@+id/nav_feedback"
+        android:name="com.example.readyachieve.ui.information.feedback.FeedbackFragment"
+        android:label="Feedback"
+        tools:layout="@layout/fragment_feedback" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.readyachieve.ui.information.settings.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/nav_leaderboard_ranking"
+        android:name="com.example.readyachieve.ui.main.leaderboard.LeaderboardRankingFragment"
+        android:label="Leaderboard Ranking"
+        tools:layout="@layout/fragment_leaderboard_ranking_layout"  />
+</navigation>
